@@ -1,4 +1,4 @@
-package pe.edu.vallegrande.supplier.model;
+package pe.edu.vallegrande.backend.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,8 +14,8 @@ import jakarta.persistence.Table;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "SUPPLIER")
-public class suppliermodel {
+@Table(name = "supplier")
+public class Supplier {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class suppliermodel {
     private String names;
 
     @Column(name = "addres", nullable = false, length = 50)
-    private String addres; // Nota: ¿Debe ser "address"? En la DB está como "addres"
+    private String address;
 
     @Column(name = "city", nullable = false, length = 25)
     private String city;
@@ -44,8 +44,8 @@ public class suppliermodel {
     private String email;
 
     @Column(name = "admin_id", nullable = false)
-    private Integer adminId;
+    private int adminId;
 
-    @Column(name = "states", length = 1)
+    @Column(name = "states", columnDefinition = "char(1) default 'A'")
     private String states;
 }

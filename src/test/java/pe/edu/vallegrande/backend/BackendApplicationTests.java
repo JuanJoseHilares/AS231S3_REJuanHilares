@@ -1,12 +1,13 @@
-package pe.edu.vallegrande.supplier;
+package pe.edu.vallegrande.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SupplierApplicationTests {
+class BackendApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
+
 }

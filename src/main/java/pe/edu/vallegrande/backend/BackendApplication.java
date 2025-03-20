@@ -1,13 +1,13 @@
-package pe.edu.vallegrande.supplier;
+package pe.edu.vallegrande.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SupplierApplication {
+public class BackendApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SupplierApplication.class, args);
+		SpringApplication.run(BackendApplication.class, args);
 	}
 
 }
